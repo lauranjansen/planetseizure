@@ -1,0 +1,2 @@
+module GaySquaresHelper
+end
