@@ -1,0 +1,28 @@
+#top, #bottom, #left, #right {
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 48px;
+    }
+    #left { 
+      left: 0; 
+      background-image: image-url("congaparrot90.gif");
+      }
+    #right { 
+      right: 0;
+      background-image: image-url("congaparrot270.gif");
+    }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 48px;
+    }
+  #bottom { 
+    bottom: 0;
+    background-image: image-url("congaparrot.gif");
+  }
+  #top{
+    background-image: image-url("aussiereversecongaparrot.gif");
+    top: 0;
+  }
