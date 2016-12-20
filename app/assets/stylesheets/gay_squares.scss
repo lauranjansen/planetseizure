@@ -1,0 +1,72 @@
+// Place all the styles related to the GaySquares controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.gay-square {
+  margin: .75rem;
+  color: $pink;
+  height: 3rem;
+  width: 3rem;
+  background-color: $green;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
+  animation: gay-square-blink .25s infinite;
+
+  &:hover {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &s {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: -.75rem;
+    background: $purple;
+    animation: gay-squares-blink .25s infinite;
+  }
+}
+
+@keyframes gay-square-blink {
+  from {
+    background-color: $purple;
+    color: $pink;
+  }
+
+  49% {
+    background-color: $purple;
+    color: $pink;
+  }
+
+  50% {
+    background-color: $green;
+    color: $pink-inverted;
+  }
+
+  to {
+    background-color: $green;
+    color: $pink-inverted;
+  }
+}
+
+@keyframes gay-squares-blink {
+  from {
+    background-color: $green;
+    color: $pink-inverted;
+  }
+
+  49% {
+    background-color: $green;
+    color: $pink-inverted;
+  }
+
+  50% {
+    background-color: $purple;
+    color: $pink;
+  }
+
+  to {
+    background-color: $purple;
+    color: $pink;
+  }
+}
