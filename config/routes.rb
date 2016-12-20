@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get 'gay_squares', to: 'gay_squares#show', as: :gay_squares
 
+  root 'gay_squares#show'
+
 end
